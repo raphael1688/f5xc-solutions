@@ -1,6 +1,9 @@
 .. meta::
    :description: F5 BIG-IP to Distributed Cloud Conversion Guide and Tips
    :keywords: BIG-IP, Conversion, Distributed Cloud, WAAP, API, Proxy Protocol
+   :category: Field-Sourced-Content
+   :sub-category: how-to
+   :author: Michael Coleman
 
 .. _conversion-guide:
 
@@ -8,7 +11,7 @@ BIG-IP To Distributed Cloud Conversion Frequently Asked Questions and Tips
 ==========================================================================
 
 Disclaimer
-----------
+~~~~~~~~~~
 
 Please note that this FAQ document is intended as a general guide and is not exhaustive. 
 While we strive to provide accurate and up-to-date information, the rapidly evolving nature of 
@@ -17,7 +20,7 @@ should not be considered a substitute for professional advice or detailed consul
 to your specific circumstances.
 
 Introduction
-------------
+~~~~~~~~~~~~
 
 This semi-comprehensive guide is designed to streamline your migration from F5 BIG-IP to F5 Distributed Cloud.  
 This document aims to address frequently asked questions that arise during the migration process, offering clear, 
@@ -687,6 +690,17 @@ SNAT
 Distributed Cloud is a SaaS Platform.  BIG-IP is not.  Some applications may be configured to accept client source for persistence or other purposes.  Since the traffic will be proxied, applications been to be enabled for a more modern approach.
 
 
+Clone Pool to Mirroring
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Many customers use either a clone pool config or an irule to clone/mirror traffic on BIG-IP.  This config is called mirroring on Distributed Cloud and can be configured within an HTTP LoadBalancer Route.
+
+.. image:: ./images/mirror.png
+   :width: 700px
+   :align: center
+
+Mirroring is used for shadowing traffic from one cluster to another. The approach used is "fire and forget", meaning it will not wait for the shadow cluster to respond before returning the response from the primary cluster. All normal statistics are collected for the shadow cluster making this feature useful for testing and troubleshooting. During mirroring, the host/authority header is altered such that *-shadow* is appended.
+
 LTM to Customer Edge
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -1257,7 +1271,12 @@ If you decide to enable VRRP for a cluster, the following should be evaluated to
 Troubleshooting
 ---------------
 
-In some cases, for troubleshooting, I can help to turn off XC Default Error Messages and allow errors directly from the Upstream.
+In some cases, for troubleshooting, it can help to turn off XC Default Error Messages and allow errors directly from the Upstream.
+
+.. image:: ./images/customerror2.png
+   :width: 700px
+   :align: center
+
 
 Response Error Codes
 ^^^^^^^^^^^^^^^^^^^^
