@@ -4,7 +4,7 @@
 
 .. _ce_virtual_site:
 
-Distributed Cloud Customer Edge Virtual Site Configuration
+Distributed Cloud Customer Edge Virtual Site for Origin Pool Configuration
 ==========================================================================
 
 This repo will provide a solution to introduce a process to configure Customer Edge Virtuakl Sites.
