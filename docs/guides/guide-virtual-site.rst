@@ -11,7 +11,7 @@ This repo will provide a solution to introduce a process to configure Customer E
 
 High Level Concepts
 -------------------
-Before we discuss the migration phases I want to introduce a few concepts that we will be utilizing.  The first concept is what we call a Virtual Site.  
+I want to introduce a few concepts that we will be utilizing.  The first concept is what we call a Virtual Site.  
 A virtual Site provides us the ability to perform a given configuration on set (or group) of Sites.  The second term is Origin Pool.  
 An origin pool is a mechanism to configure a set of endpoints grouped together into a resource pool used in the load balancer configuration.
 
