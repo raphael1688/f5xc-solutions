@@ -12,7 +12,12 @@ This repo will provide a solution to introduce a process to configure a Custom V
 Prerequisite
 ------------------
 Minimun requirements needed for this environment:
-Customer Edge Deployed and connected to network for L4-L7 Load Balancing.  Have a connection between the network and Customer Edge that have the capability to utilize eBGP.
+Distributed Cloud Site configured with the Secure Mesh Site Version 2 (SMSv2).
+Our example we will use a vmware site (called netta-bgp) configured with SMSv2 and 2 interfaces ens192 (SLO) and ens224 (SLI)
+We will use ens224 to establish BGP with a VYOS Router
+
+
+Customer Edge Deployed and connected to network for L4-L7 Load Balancing.  Have a connection between the network and Customer Edge that has the capability to utilize eBGP.
 
 Please see highlevel topology below:
 
