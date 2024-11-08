@@ -47,8 +47,8 @@ Vyos Config:
    * VYOS Router configured to establish BGP on ethernet 1 interface peering to IP 192.168.20.10 and remote ASN 65519 with local ASN of 65520.  
    * In my config example I have 2 peers in the configuration we will only focus on the one
 
-.. figure:: ./images/bgp_vyos_config.png
-   :align: center
+   .. figure:: ./images/bgp_vyos_config.png
+      :align: center
 
 Distributed Cloud CE Config:
    * Goto Multi-Cloud Network Connect
@@ -56,8 +56,8 @@ Distributed Cloud CE Config:
         * BGPs
             * Add BGP
 
-.. figure:: ./images/bgp_xc_ce_config_1.png
-   :align: center
+   .. figure:: ./images/bgp_xc_ce_config_1.png
+      :align: center
 
    * On the BGP Screen Provide:
         * Name
@@ -71,8 +71,8 @@ Distributed Cloud CE Config:
         * Peers
    * Add Item
 
-.. figure:: ./images/bgp_xc_ce_config_2.png
-   :align: center
+   .. figure:: ./images/bgp_xc_ce_config_2.png
+      :align: center
 
 
 
