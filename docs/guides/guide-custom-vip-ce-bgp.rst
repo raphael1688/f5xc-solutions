@@ -21,7 +21,7 @@ Customer Edge Deployed and connected to network for L4-L7 Load Balancing.  Have 
 
 Please see highlevel topology below:
 
-.. figure:: ./images/site-vs-virtual-site.png 
+.. figure:: ./images/bgp_example_topology.png
    :align: center
 
 High Level Concepts
