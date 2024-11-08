@@ -2,12 +2,12 @@
    :description: F5 Distributed Cloud Customer Edge Virtual Site Example
    :keywords: F5, Distributed Cloud, Customer Edge, Virtual Site
 
-.. _ce_virtual_site:
+.. _ce_origin_pool_virtual_site:
 
 Distributed Cloud Customer Edge Virtual Site for Origin Pool Configuration
 ==========================================================================
 
-This repo will provide a solution to introduce a process to configure Customer Edge Virtuakl Sites.
+This repo will provide a solution to introduce a process to configure Customer Edge Virtual Sites.
 
 High Level Concepts
 -------------------
