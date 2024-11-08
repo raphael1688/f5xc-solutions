@@ -50,7 +50,7 @@ Vyos Config:
    .. figure:: ./images/bgp_vyos_config.png
       :align: center
 
-Distributed Cloud CE Config:
+Distributed Cloud BGP CE Config:
    * Goto Multi-Cloud Network Connect
     * Networking
         * BGPs
@@ -87,13 +87,43 @@ Distributed Cloud CE Config:
             * 179
         * Peer Interface
             * Chose interface on CE my example is ens224.
-            * If using a 3 node cluster you need to configure for each node interface individually
+            * If using a 3 node cluster or a multi-node virtual site you need to configure for each node interface individually
         * Apply
    * Bottom Right
         * Save and Exit
 
    .. figure:: ./images/bgp_xc_ce_bgp_peer_config_3.png
       :align: center
+
+Now that we have established a BGP peering relationship between the Customer Edge and Vyos Router we need to create a HTTP LB with a healthy origin to advertise the /32 VIP into the network
+   * Goto Multi-Cloud App Connect
+        * Manage
+            * HTTP LB
+                * Add HTTP LB
+
+    .. figure:: ./images/bgp_xc_http_lb.png
+      :align: center
+
+   * Fill out HTTP LB Values
+   * Include an active or healthy origin
+   * Goto Other Settings
+        * VIP Advertisement
+            * Custom
+
+    .. figure:: ./images/bgp_xc_other_settings_vip.png
+      :align: center
+
+   * Configure
+        * Select Site
+            * Choose which network to Advertise the VIP on my example is the Inside
+        * Site Reference is the CE Site My example
+            * System/netta-bgp
+        * Custom VIP you want to advertise 
+            * Example - 10.200.200.100
+
+    .. figure:: ./images/bgp_vip_config.png
+      :align: center
+
 
 
 
