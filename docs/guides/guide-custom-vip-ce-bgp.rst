@@ -89,7 +89,7 @@ Distributed Cloud CE Config:
             * Chose interface on CE my example is ens224.
             * If using a 3 node cluster you need to configure for each node interface individually
         * Apply
-    * Bottom Right
+   * Bottom Right
         * Save and Exit
 
    .. figure:: ./images/bgp_xc_ce_bgp_peer_config_3.png
