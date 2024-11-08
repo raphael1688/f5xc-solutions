@@ -59,6 +59,23 @@ Distributed CLoud CE Config:
 .. figure:: ./images/bgp_xc_ce_config_1.png
    :align: center
 
+   * On the BGP Screen Provide:
+    * Name
+    * Description (optional)
+    * Site 
+    * Example site - netta-bgp
+    * ASN
+    * Example ASN-65519
+    * Router ID
+    * Example From Interface Add
+    * Peers
+   * Add Item
+
+.. figure:: ./images/bgp_xc_ce_config_2.png
+   :align: center
+
+
+
 
 
 
