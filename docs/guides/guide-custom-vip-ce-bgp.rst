@@ -50,7 +50,7 @@ Vyos Config:
 .. figure:: ./images/bgp_vyos_config.png
    :align: center
 
-Distributed CLoud CE Config:
+Distributed Cloud CE Config:
    * Goto Multi-Cloud Network Connect
     * Networking
         * BGPs
@@ -60,15 +60,15 @@ Distributed CLoud CE Config:
    :align: center
 
    * On the BGP Screen Provide:
-    * Name
-    * Description (optional)
-    * Site 
-    * Example site - netta-bgp
-    * ASN
-    * Example ASN-65519
-    * Router ID
-    * Example From Interface Add
-    * Peers
+        * Name
+        * Description (optional)
+        * Site 
+            * Example site - netta-bgp
+        * ASN
+            * Example ASN-65519
+        * Router ID
+            * Example From Interface Add
+        * Peers
    * Add Item
 
 .. figure:: ./images/bgp_xc_ce_config_2.png
