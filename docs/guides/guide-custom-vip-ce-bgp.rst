@@ -124,10 +124,25 @@ Now that we have established a BGP peering relationship between the Customer Edg
     .. figure:: ./images/bgp_vip_config.png
       :align: center
 
+BGP Validation
+-------------------
+We will see the output of the vyos router and CE bgp commands:
 
+Vyos Output:
 
+    .. figure:: ./images/bgp_vyos_output.png
+      :align: center
 
+Customer Edge Output:
 
+    * Goto Multi-Cloud Network Connect
+        * CE Site
+            * Tools
+                * Show BGP Peers
+                * Show BGP Route
+
+    .. figure:: ./images/bgp_ce_output.png
+      :align: center
 
 
 
