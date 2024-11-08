@@ -29,16 +29,16 @@ Highlevel topology below:
 Review
 -------------------
 Before we jump right in if you need a refresher please see the following articles:
-* `F5 XC Advanced Networking BGP <https://docs.cloud.f5.com/docs-v2/multi-cloud-network-connect/how-tos/advanced-networking/bgp>`_ 
-* `F5 XC Reference Architecture <https://community.f5.com/kb/technicalarticles/f5-distributed-cloud-customer-edge-on-f5-rseries-%E2%80%93-reference-architecture/333034>`_
-* `F5 XC Routing Options <https://community.f5.com/kb/technicalarticles/f5-distributed-cloud---customer-edge-site---deployment--routing-options/319435>`_
+   * `F5 XC Advanced Networking BGP <https://docs.cloud.f5.com/docs-v2/multi-cloud-network-connect/how-tos/advanced-networking/bgp>`_ 
+   * `F5 XC Reference Architecture <https://community.f5.com/kb/technicalarticles/f5-distributed-cloud-customer-edge-on-f5-rseries-%E2%80%93-reference-architecture/333034>`_
+   * `F5 XC Routing Options <https://community.f5.com/kb/technicalarticles/f5-distributed-cloud---customer-edge-site---deployment--routing-options/319435>`_
 
 BGP Configuration
 -------------------
 As stated and shown above in the prerequisite and topology sections we have the following setup:
-* Distributed Cloud Site configured with the Secure Mesh Site Version 2 (SMSv2).
-* Our example we will use a vmware site (called netta-bgp) configured with SMSv2 and 2 interfaces ens192 (SLO) and ens224 (SLI)
-* We will use ens224 to establish BGP with a VYOS Router
+   * Distributed Cloud Site configured with the Secure Mesh Site Version 2 (SMSv2).
+   * Our example we will use a vmware site (called netta-bgp) configured with SMSv2 and 2 interfaces ens192 (SLO) and ens224 (SLI)
+   * We will use ens224 to establish BGP with a VYOS Router
 
 
 
