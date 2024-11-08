@@ -1,6 +1,9 @@
 .. meta::
    :description: F5 Distributed Cloud Customer Edge Virtual Site Example
    :keywords: F5, Distributed Cloud, Customer Edge, Virtual Site
+   :category: Field-Sourced-Content
+   :sub-category: how-to
+   :author: Steven Iannetta
 
 .. _ce_origin_pool_virtual_site:
 

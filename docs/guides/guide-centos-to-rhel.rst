@@ -3,7 +3,7 @@
    :keywords: F5, Distributed Cloud, Customer Edge, Centos, RHEL, 
    :category: Field-Sourced-Content
    :sub-category: how-to
-   :author: Michael Coleman
+   :author: Steven Iannetta
    
 .. _ce_os_migration-centos_to_rhel:
 
