@@ -74,6 +74,29 @@ Distributed Cloud CE Config:
    .. figure:: ./images/bgp_xc_ce_config_2.png
       :align: center
 
+   * On the BGP Screen Provide:
+        * Name
+        * Description (optional)
+        * Peer Type
+            * External
+        * ASN
+            * Example 65520
+        * Peer Address
+            * Example 192.168.20.1
+        * Peer Port 
+            * 179
+        * Peer Interface
+            * Chose interface on CE my example is ens224.
+            * If using a 3 node cluster you need to configure for each node interface individually
+        * Apply
+    * Bottom Right
+        * Save and Exit
+
+   .. figure:: ./images/bgp_xc_ce_bgp_peer_config_3.png
+      :align: center
+
+
+
 
 
 
