@@ -152,7 +152,7 @@ layer 7 route redirect, layer 7 route direct to cdn with a fallback pool, and in
 #. Add Layer Route to CDN
 
    * Goto Routes section and edit configuration
-   * Add a simple route to CDN sending all static files via a Regex match
+   * Add a simple route to CDN sending all static files via a Regex match (^.*\.(css|webp|png|gif|js|jpg|jpeg|docx)$)
    * Add origin servers to route (Example shows cdn distribution cdn-xcturltes and fallback pool of the actual cdn server f5airlinebackend)
    * Advanced Options to add the proer secure-to-cdn header so cdn distribution accepts HTTP request from L7 route
 
