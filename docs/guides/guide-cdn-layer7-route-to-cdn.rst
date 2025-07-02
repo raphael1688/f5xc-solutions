@@ -39,6 +39,8 @@ Once logged into your F5 Distributed Cloud Console
 .. figure:: ./images/cdn-add-distribution.png
    :align: center
 
+Origin Config
+--------------
    * Fill in details 
    * Name (Host Header used to reach origin)
    * DOMAIN
