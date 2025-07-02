@@ -86,15 +86,13 @@ Create any specific caching policy if no policy is created the default is to cac
 #. Create a custom cache rule:
 
    * Bypass rule for health checking a specific path from the HTTP-LB through the CDN distribution to the origin
-
-.. figure:: ./images/cdn-bypass.png 
-   :align: center
-
-   * Create caching policy based on regex expression for static content
+   * Create caching policy based on regex expression for static content. Regex used (^.*\.(css|webp|png|gif|js|jpg|jpeg)$)
    * Add Expression Name
    * Add Terms 
    * Add Conditions
-   * Regex used (^.*\.(css|webp|png|gif|js|jpg|jpeg)$)
+
+.. figure:: ./images/cdn-bypass.png 
+   :align: center
 
 .. figure:: ./images/cdn-cache.png 
    :align: center
