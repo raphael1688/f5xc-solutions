@@ -39,13 +39,12 @@ Step-by-Step Guide
 .. figure:: ./images/cdn-add-distribution.png
    :align: center
 
-- **Origin Config**:
-
-   * Fill in details 
-   * Name (Host Header used to reach origin)
-   * DOMAIN
+- **Origin Config**: Fill in details 
+#. Name (Host Header used to reach origin)
+#. Domain
+#. Certificate Option
    * Autocert or Upload Custom Certificate
-   * Add CDN Origin
+#. Add CDN Origin
    * This is the actual application via DNS or Implement
 
 .. figure:: ./images/cdn-origin-config.png 
