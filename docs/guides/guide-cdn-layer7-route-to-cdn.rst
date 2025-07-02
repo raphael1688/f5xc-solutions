@@ -32,7 +32,7 @@ Highlevel Topology:
 
 Step-by-Step Guide
 -------------------
-Once logged into your F5 Distributed Cloud Console 
+- **Once logged into your F5 Distributed Cloud Console**
    * Goto CDN Distribution Tile
    * Click on Add Distribution
 
