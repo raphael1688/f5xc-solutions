@@ -40,7 +40,9 @@ Step-by-Step Guide
    :align: center
 
 - **Origin Config**: Fill in details 
-#. Name (Host Header used to reach origin)
+#. Origin Host Header 
+
+   * DNS Name (Host Header used to reach origin)
 #. Domain
 #. Certificate Option
    * Autocert or Upload Custom Certificate
