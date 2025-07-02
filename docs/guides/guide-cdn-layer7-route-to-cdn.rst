@@ -23,7 +23,7 @@ Cacheable file types are sent to the CDN distribution, while all other requests 
 This approach gives you both flexibility and control over application-level routing while adding a security control point at the HTTP-LB.
 
 
-Highlevel topology below:
+Highlevel Topology:
 =========================
 
 .. figure:: ./images/cdn-http-lb-layer7.png
@@ -39,8 +39,8 @@ Once logged into your F5 Distributed Cloud Console
 .. figure:: ./images/cdn-add-distribution.png
    :align: center
 
-Origin Config
---------------
+- **Origin Config**:
+
    * Fill in details 
    * Name (Host Header used to reach origin)
    * DOMAIN
