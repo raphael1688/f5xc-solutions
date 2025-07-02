@@ -90,11 +90,11 @@ Create any specific caching policy if no policy is created the default is to cac
 .. figure:: ./images/cdn-bypass.png 
    :align: center
 
-    * Create caching policy based on regex expression for static content
-    * Add Expression Name
-    * Add Terms 
-    * Add Conditions
-    * Regex used (^.*\.(css|webp|png|gif|js|jpg|jpeg)$)
+   * Create caching policy based on regex expression for static content
+   * Add Expression Name
+   * Add Terms 
+   * Add Conditions
+   * Regex used (^.*\.(css|webp|png|gif|js|jpg|jpeg)$)
 
 .. figure:: ./images/cdn-cache.png 
    :align: center
