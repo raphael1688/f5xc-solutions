@@ -42,12 +42,13 @@ Step-by-Step Guide
 CDN Distribution
 -----------------
 Fill out Metadata and Basic Configuration:
+
 #. Metadata:
 
    * Name
    * Labels (as needed)
    * Description
-   
+
 #. Basic Configuration
    
    * Domain
