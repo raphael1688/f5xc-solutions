@@ -46,13 +46,13 @@ Fill in the proper details
 #. Origin Host Header 
 
    * DNS Name (Host Header used to reach origin)
-#. Domain
-#. Certificate Option
-
-   * Autocert or Upload Custom Certificate
+#. TLS Options to Servers
 #. Add CDN Origin
 
    * This is the actual application via DNS or Implement
+#. Optional Features:
+
+   * Origin Request Timeout
 
 .. figure:: ./images/cdn-origin-config.png 
    :align: center
