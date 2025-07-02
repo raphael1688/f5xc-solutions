@@ -76,6 +76,38 @@ Fill in the proper Origin Details:
 .. figure:: ./images/cdn-origin-config.png 
    :align: center
 
+Caching Policy Sub Menu:
+------------------------
+Create any specific caching policy if no policy is created the default is to cache eligible objects for the web page based on default cache header
+
+#. Cache TTL Mode
+   
+   * Can use TTL from origin, overide, or disable
+#. Create a custom cache rule:
+
+   * Bypass rule for health checking a specific path from the HTTP-LB through the CDN distribution to the origin
+
+.. figure:: ./images/cdn-bypass.png 
+   :align: center
+
+    * Create caching policy based on regex expression for static content
+    * Add Expression Name
+    * Add Terms 
+    * Add Conditions
+
+.. figure:: ./images/cdn-cache.png 
+   :align: center
+
+.. figure:: ./images/cdn-cache-regex.png 
+   :align: center
+
+#. Attach Policy to CDN Distribution
+
+   * Example shows adding Bypass and Cache rules:
+
+.. figure:: ./images/cdn-cache-attach.png 
+   :align: center
+
 WAF and Security Controls:
 ------------------
 All security controls are still Private Preview with the exception of a Service Policy to limit access from HTTP LB to CDN Distribution only
@@ -87,7 +119,8 @@ All security controls are still Private Preview with the exception of a Service 
 
    * Set a policy on CDN for Regional Edge (HTTP-LB) IPs and deny all else
    * or
-   * Set a policy on CDN to only allow a request header from the HTTP LB and deny all else (example shown)
+   * Set a policy on CDN to only allow a request header from the HTTP LB and deny all else (example shown) we will inject the header on the HTTP LB configuration
 
 .. figure:: ./images/cdn-service-policy.png 
    :align: center
+
