@@ -42,9 +42,9 @@ Once logged into your F5 Distributed Cloud Console
    * Fill in details 
    * Name (Host Header used to reach origin)
    * DOMAIN
-    * Autocert or Upload Custom Certificate
+   * Autocert or Upload Custom Certificate
    * Add CDN Origin
-    * This is the actual application via DNS or Implement
+   * This is the actual application via DNS or Implement
 
 .. figure:: ./images/cdn-origin-config.png 
    :align: center
