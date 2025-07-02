@@ -124,3 +124,40 @@ All security controls are still Private Preview with the exception of a Service 
 .. figure:: ./images/cdn-service-policy.png 
    :align: center
 
+HTTP LB CDN Specific Configuration to Route to the CDN:
+-------------------------------------------------------
+Prerequisite for this section is understanding on how to configure an HTTP-LB and advertise it to the internet.  We will only show case Origin (including health check),
+layer 7 route redirect, layer 7 route direct to cdn with a fallback pool, and injecting a header (to match service policy on CDN distribtution)
+
+- **Once logged into your F5 Distributed Cloud Console**
+   * Goto Multi-Cloud App Connect Tile
+   * Click on Add HTTP Load Balancer or Edit the configuration of an existing HTTP LB
+
+#. Origin Configuration
+
+   * Add Origin Server (example uses public DNS of CDN Distribution)
+   * Port
+   * TLS to Origin
+   * Local End Points only
+
+#. Add Health Check to go Through CDN
+
+   * Specify proper host header
+   * Path on origin to perform health check thru CDN Distribution (Example show /thru-cdn.png)
+   * Add Request Header so CDN Distribution accepts HTTP Request and passes to origin via the bypass rule cache rule on CDN
+
+.. figure:: ./images/cdn-http-origin.png 
+   :align: center
+
+#. Add Layer Route to CDN
+
+   * Goto Routes section and edit configuration
+   * Add a simple route to CDN sending all static files via a Regex match
+   * Add origin servers to route (Example shows cdn distribution cdn-xcturltes and fallback pool of the actual cdn server f5airlinebackend)
+   * Advanced Options to add the proer secure-to-cdn header so cdn distribution accepts HTTP request from L7 route
+
+.. figure:: ./images/cdn-http-route.png 
+   :align: center
+
+.. figure:: ./images/cdn-http-header.png 
+   :align: center
