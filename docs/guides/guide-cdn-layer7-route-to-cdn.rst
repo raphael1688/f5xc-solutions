@@ -39,9 +39,25 @@ Step-by-Step Guide
 .. figure:: ./images/cdn-add-distribution.png
    :align: center
 
-Origin Config: 
+CDN Distribution
+-----------------
+Fill out Metadata and Basic Configuration:
+#. Metadata:
+
+   * Name
+   * Labels (as needed)
+   * Description
+#. Basic Configuration
+   
+   * Domain
+   * Certificate Options 
+
+.. figure:: ./images/cdn-metadata-basic.png
+   :align: center
+
+Origin Config Sub Menu: 
 -------------------------------
-Fill in the proper details
+Fill in the proper Origin Details:
 
 #. Origin Host Header 
 
@@ -49,10 +65,27 @@ Fill in the proper details
 #. TLS Options to Servers
 #. Add CDN Origin
 
-   * This is the actual application via DNS or Implement
+   * This is the actual application via public DNS or IP 
 #. Optional Features:
 
    * Origin Request Timeout
+#. Apply
 
 .. figure:: ./images/cdn-origin-config.png 
+   :align: center
+
+WAF and Security Controls:
+------------------
+All security controls are still Private Preview with the exception of a Service Policy to limit access from HTTP LB to CDN Distribution only
+
+#. Web Application Firewall (Preview)
+#. API Protection (Preview)
+#. DoS Protection (Preview)
+#. Common Security - Service Policy (Preview)
+
+   * Set a policy on CDN for Regional Edge (HTTP-LB) IPs and deny all else
+   * or
+   * Set a policy on CDN to only allow a request header from the HTTP LB and deny all else (example shown)
+
+.. figure:: ./images/cdn-service-policy.png 
    :align: center
