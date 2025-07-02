@@ -47,6 +47,7 @@ Fill out Metadata and Basic Configuration:
    * Name
    * Labels (as needed)
    * Description
+   
 #. Basic Configuration
    
    * Domain
