@@ -24,14 +24,14 @@ This approach gives you both flexibility and control over application-level rout
 
 
 Highlevel Topology:
-=========================
+===================
 
 .. figure:: ./images/cdn-http-lb-layer7.png
    :align: center
 
 
 Step-by-Step Guide
--------------------
+------------------
 - **Once logged into your F5 Distributed Cloud Console**
    * Goto CDN Distribution Tile
    * Click on Add Distribution
@@ -58,7 +58,7 @@ Fill out Metadata and Basic Configuration:
    :align: center
 
 Origin Config Sub Menu: 
--------------------------------
+-----------------------
 Fill in the proper Origin Details:
 
 #. Origin Host Header 
@@ -109,7 +109,7 @@ Create any specific caching policy if no policy is created the default is to cac
    :align: center
 
 WAF and Security Controls:
-------------------
+--------------------------
 All security controls are still Private Preview with the exception of a Service Policy to limit access from HTTP LB to CDN Distribution only
 
 #. Web Application Firewall (Preview)
