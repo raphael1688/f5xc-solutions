@@ -26,7 +26,7 @@ This approach gives you both flexibility and control over application-level rout
 Highlevel Topology:
 -------------------
 
-.. figure:: ./images/cdn-http-lb-layer7-2.png
+.. figure:: ./images/cdn-http-lb-layer7.png
    :align: center
 
 
