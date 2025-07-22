@@ -125,8 +125,7 @@ All security controls are still Private Preview with the exception of a Service 
 
 HTTP LB CDN Specific Configuration to Route to the CDN:
 -------------------------------------------------------
-Prerequisite for this section is understanding on how to configure an HTTP-LB and advertise it to the internet.  We will only show case Origin (including health check),
-layer 7 route redirect, layer 7 route direct to cdn with a fallback pool, and injecting a header (to match service policy on CDN distribtution)
+Prerequisite for this section is understanding on how to configure an HTTP-LB and advertise it to the internet.  We will only show case Origin (including health check), layer 7 route to cdn with a fallback pool, and injecting a header (to match service policy on CDN distribtution)
 
 - **Once logged into your F5 Distributed Cloud Console**
    * Goto Multi-Cloud App Connect Tile
