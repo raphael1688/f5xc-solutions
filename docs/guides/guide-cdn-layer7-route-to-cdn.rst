@@ -116,9 +116,7 @@ All security controls are still Private Preview with the exception of a Service 
 #. DoS Protection (Preview)
 #. Common Security - Service Policy (Preview)
 
-   * Set a policy on CDN for Regional Edge (HTTP-LB) IPs and deny all else
-   * or
-   * Take the recomended approach of settting a policy on CDN to only allow a request header from the HTTP LB and deny all else (example shown) we will inject the header on the HTTP LB configuration
+   * Recomended approach is to set a service policy on the CDN to only allow a request header from the HTTP LB and deny all else (example shown) we will inject the header on the HTTP LB configuration
 
 .. figure:: ./images/cdn-service-policy.png 
    :align: center
