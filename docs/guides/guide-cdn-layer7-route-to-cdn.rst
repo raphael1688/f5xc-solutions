@@ -64,7 +64,7 @@ Fill in the proper Origin Details:
 #. Origin Host Header 
 
    * DNS Name (Host Header used to reach origin)
-#. TLS Options to Servers
+#. Server Side TLS Options to Origin
 #. Add CDN Origin
 
    * This is the actual application via public DNS or IP 
