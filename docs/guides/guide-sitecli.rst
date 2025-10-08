@@ -67,7 +67,6 @@ The CLI uses an interactive prompt-based interface:
 - **Tab Completion:** Press Tab to see available commands
 - **Help:** Use ``--help`` flag with commands for detailed information
 - **Exit:** Type ``exit`` to leave the CLI
-- **Shell Access:** Type ``shell`` to access system shell for advanced commands
 
 Part 1: SiteCLI Top-Level Commands
 ===================================
