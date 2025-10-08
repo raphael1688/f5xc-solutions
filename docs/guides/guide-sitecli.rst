@@ -474,9 +474,6 @@ ExecCLI provides safe, sandboxed access to diagnostic and administrative command
    # SSH to admin account
    ssh admin@<node-ip>
 
-   # Enter shell
-   >>> shell
-
    # Run execcli commands
    # execcli <command> [arguments]
 
