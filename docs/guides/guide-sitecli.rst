@@ -89,8 +89,7 @@ The SiteCLI provides 13 top-level commands for node configuration, monitoring, a
 9. reboot
 10. shell
 11. show
-12. technician
-13. upgrade
+12. upgrade
 
 Command Reference
 =================
@@ -445,79 +444,6 @@ Provides access to a system shell for advanced troubleshooting and administratio
 - Advanced users only
 - Direct system access
 - Can affect node stability if misused
-
-show
-----
-
-**Purpose:** Display system information
-
-**Description:**
-Shows various system configuration and operational data.
-
-**Usage:**
-
-.. code-block:: text
-
-   >>> show
-   >>> show --help
-
-**Information Categories:**
-
-- Configuration details
-- Operational state
-- System parameters
-- Network information
-- Service status
-
-technician
-----------
-
-**Purpose:** Technician mode access
-
-**Description:**
-Provides access to technician-level tools and diagnostics for advanced troubleshooting.
-
-**Usage:**
-
-.. code-block:: text
-
-   >>> technician
-   >>> technician --help
-
-**Capabilities:**
-
-- Advanced diagnostic tools
-- Low-level system access
-- Debug information collection
-- Support bundle generation
-
-upgrade
--------
-
-**Purpose:** Software upgrade operations
-
-**Description:**
-Manages software upgrades for the Customer Edge node.
-
-**Usage:**
-
-.. code-block:: text
-
-   >>> upgrade
-   >>> upgrade --help
-
-**Functions:**
-
-- Check for available software updates
-- View current software version
-- Initiate software upgrade
-- Manage upgrade policies
-
-**Related Information:**
-
-- Current SW version display
-- Software version expiry date
-- Upgrade status monitoring
 
 Advanced SiteCLI Functions
 ==========================
