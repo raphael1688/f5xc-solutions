@@ -41,7 +41,6 @@ The SiteCLI is accessed via SSH using the ``admin`` user account:
 
 - Username: ``admin``
 - Password: Provided during node provisioning
-- Default shell: ``/opt/bin/vpmu``
 
 **Welcome Screen:**
 
