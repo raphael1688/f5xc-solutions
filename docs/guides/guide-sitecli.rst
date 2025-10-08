@@ -85,9 +85,8 @@ The SiteCLI provides 13 top-level commands for node configuration, monitoring, a
 7. clear
 8. factory-reset
 9. reboot
-10. shell
-11. show
-12. upgrade
+10. show
+11. upgrade
 
 Command Reference
 =================
@@ -377,6 +376,7 @@ Performs a factory reset of the Customer Edge node, removing all configuration a
 **Warnings:**
 
 - ⚠️ This operation is **IRREVERSIBLE**
+- This command is only supported on Bare Metal installs, all other systems will be unrecoverable.
 - All node configuration will be lost
 - Node will need to be re-registered
 - Workloads will be removed
@@ -413,35 +413,6 @@ Performs a system reboot of the Customer Edge node.
 - Services will be stopped cleanly
 - Node will go offline during reboot
 - Typically takes 2-5 minutes to complete
-
-shell
------
-
-**Purpose:** Access system shell
-
-**Description:**
-Provides access to a system shell for advanced troubleshooting and administration tasks. This is where ExecCLI commands are executed.
-
-**Usage:**
-
-.. code-block:: text
-
-   >>> shell
-   >>> shell --help
-
-**Notes:**
-
-- Drops to bash shell
-- Provides root or administrative access
-- Used for advanced diagnostics
-- Access to system utilities and logs
-- All execcli commands are run from this shell
-
-**Warning:**
-
-- Advanced users only
-- Direct system access
-- Can affect node stability if misused
 
 Advanced SiteCLI Functions
 ==========================
