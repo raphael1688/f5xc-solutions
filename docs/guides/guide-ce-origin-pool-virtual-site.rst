@@ -1,33 +1,20 @@
 .. meta::
-   :description: F5 Distributed Cloud Customer Edge Centos to RHEL OS Conversion Example
-   :keywords: F5, Distributed Cloud, Customer Edge, Centos, RHEL, 
+   :description: F5 Distributed Cloud Customer Edge Virtual Site Example
+   :keywords: F5, Distributed Cloud, Customer Edge, Virtual Site
    :category: Field-Sourced-Content
    :sub-category: how-to
    :author: Steven Iannetta
-   
-.. _ce_os_migration-centos_to_rhel:
 
-Distributed Cloud Customer Edge Centos to RHEL OS Migration
+.. _ce_origin_pool_virtual_site:
+
+Distributed Cloud Customer Edge Virtual Site for Origin Pool Configuration
 ==========================================================================
 
-This repo will provide a solution to introduce a process to migrate a Customer Edge site from
-End of Life Centos OS to RHEL Operating System.
-
-Introduction
-------------
-Back in December 2023 Distributed Cloud Customer Edges image was based on Red Hat Enterprise Linux or RHEL Operating System  
-Prior to that the Customer Edge ran on Centos 7.x Operating System which has been announced End of Life .
-The goal of this guide is to provide a migration strategy from Centos to RHEL OS for customer edge sites that are in a SaaS-Hybrid Edge Deployment
-pattern (option #2 in image below) where the VIP is on the Regional Edge and the tunnel termination and SNAT are on the customer edge.  
-While we are using this deployment pattern as an example the concepts for other patterns are the same with a few caveats which will be included 
-at the end of this article.
-
-.. figure:: ./images/f5xc-deployment-models.png
-   :align: center
+This repo will provide a solution to introduce a process to configure Customer Edge Virtual Sites.
 
 High Level Concepts
 -------------------
-Before we discuss the migration phases I want to introduce a few concepts that we will be utilizing.  The first concept is what we call a Virtual Site.  
+I want to introduce a few concepts that we will be utilizing.  The first concept is what we call a Virtual Site.  
 A virtual Site provides us the ability to perform a given configuration on set (or group) of Sites.  The second term is Origin Pool.  
 An origin pool is a mechanism to configure a set of endpoints grouped together into a resource pool used in the load balancer configuration.
 
@@ -99,28 +86,3 @@ In this step we will validate the origin pool is healthy from the virtual site.
    * Click on Origins Servers and you should see 2 origins one form each site making up the virtual site (my examples are netta-vsiteclus1 and nettavsiteclus2)
    .. figure:: ./images/origin-healthy.png
     :align: center
-
-Migration
----------
-Now that we have the virtual site and the proper origin pool discovery method built we can start the migration.
-
-   * Go to the HTTP LB and add the additional virtual site origin pool under the Origins section
-   * Leverage weights and Priorities with the 2 origin pools to start the migration from the Centos Site to the Virtual site origin pool.  Typical starting point is both origin pools will have a Priority of 1 and Weight will be in a value to equal 100.  SO Centos origin pool have a weight of 95 and Virtual Site Origin Pool 5 and decrement and increment both as you migrate.
-   * Once 100% of traffic is on the Virtual site origin pool remove the Virtual Site label from the centos site
-   * Remove the original Centos Site origin pool form the HTTP LB
-   * Delete the Centos Cluster
-
-Additional Information
-----------------------
-In the above example for the Customer Edge (CE) deployment we were leveraging the RE's to publish VIPs to the internet 
-and the CE's were used as tunnel termination points as well as SNAT to origin members.
-If you move the VIP to the CE there are a few caveats with the way to advertise that VIP to the network.  
-For example in order to leverage all nodes within the cluster you will need to provide a VIP Advertisement policy that consisted of an out of band DNS LB option or nested LB option.
-
-Also as mentioned earlier in this article there can also be HA and bandwidth advantages to leveraging virtual sites as depicted below in the last slide.
-
-   .. figure:: ./images/add-info.png
-    :align: center
-
-For more info on the migration process or CE design options reach out to your F5 Distributed Cloud Specialists
-
